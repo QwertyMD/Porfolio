@@ -1,1 +1,32 @@
-<h2 style="text-align: center;">Welcome</h2><div style="text-align: center;"><i>Thank you for giving your precious time for my website&nbsp;</i></div><div style="text-align: center;"><i>Your attention is highly appreciated</i></div>
+<!DOCTYPE html>
+<head>
+    <title>Welcome</title>
+    <link rel="shortcut icon" type="image/png" href="https://avatarfiles.alphacoders.com/152/152286.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="contact contact-left">
+            <a class="link" href="https://www.facebook.com/profile.php?id=100004187504968" target="_blank">Facebook</a>
+        </div>
+        <div class="contact contact-right">
+            <a class="link" href="https://github.com/QwertyMD" target="_blank">Github</a>
+        </div>
+        <h1>Hello There!</h1>
+        <h1>I'm Aaryan Dhakal <span class="p1">(18)(he/him)</span></h1>
+        <p class="p1">A computer enthusiast</p>
+        <p class="quote">If you're always trying to be normal,<br>You'll never know how amazing you can be.</p>
+        <button class="btn" onclick="togglePopup()">Test Button</button>
+        <div id="popup" class="popup">
+            <span class="close" onclick="togglePopup()">X</span>
+            <p>Tell me, where shall I go<br>To the left, where nothing is right<br>Or to the right, where nothing is left</p>
+        </div>
+    </div>
+    <script>
+        function togglePopup() {
+            var popup = document.getElementById("popup");
+            popup.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
