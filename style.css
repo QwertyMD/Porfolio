@@ -105,16 +105,11 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  animation: image 3s infinite;
+  transition: transform 3s;
 }
 
-@keyframes image {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(-1turn);
-  }
+.profile-content img:hover {
+  transform: rotate(-1turn);
 }
 
 .profile-content > h2 {
