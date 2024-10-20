@@ -106,11 +106,16 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  transition: transform 3s;
+  animation: image 3s infinite;
 }
 
-.profile-content img:hover {
-  transform: rotate(-1turn);
+@keyframes image {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-1turn);
+  }
 }
 
 .profile-content > h2 {
