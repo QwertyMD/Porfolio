@@ -3,216 +3,165 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Holy Moly</title>
+    <title>L</title>
     <link
       rel="shortcut icon"
-      href="https://avatarfiles.alphacoders.com/290/29034.jpg"
+      href="https://avatarfiles.alphacoders.com/364/364764.jpg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="module" crossorigin src="assets/index-BBbTurAX.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/index-DWn5l5ez.css">
   </head>
-  <body>
-    <div class="whole-body">
-      <button>
-        <svg
-          id="switch"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="48"
-          height="48"
-          color="#fff"
-          fill="none"
-        >
-          <circle
-            cx="12"
-            cy="12"
-            r="10"
-            stroke="currentColor"
-            stroke-width="1.5"
-          />
-          <path
-            d="M12.9154 15C12.9154 15 15.5 12.7905 15.5 12C15.5 11.2094 12.9154 9 12.9154 9M8.50002 15C8.50002 15 11.0846 12.7905 11.0846 12C11.0846 11.2094 8.5 9 8.5 9"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </button>
 
-      <div class="profile-content">
+  <body
+    class="mt-2 md:mt-3 font-['JetBrains_Mono'] bg-black bg-[url('https://www.transparenttextures.com/patterns/shattered-dark.png')] text-white relative overflow-x-hidden transition-colors duration-500"
+  >
+    <header
+      class="grid justify-items-center justify-center text-center md:flex md:items-center md:justify-between md:mx-9"
+    >
+      <div class="clock-switch flex items-center justify-between w-36">
+        <div class="clock pointer-events-none">
+          <div class="time-section"></div>
+          <div class="date-section"></div>
+        </div>
+
+        <div class="switch">
+          <i class="fa-regular fa-lightbulb fa-2xl cursor-pointer"></i>
+          <i class="hidden fa-regular fa-moon fa-2xl cursor-pointer"></i>
+        </div>
+      </div>
+
+      <nav
+        class="relative m-4 rounded-xl bg-[aliceblue] shadow-[0_0_1rem_#000] flex items-center"
+      >
+        <div
+          class="active absolute bg-black py-4 w-12 z-10 rounded-lg left-2 transition-all duration-1000"
+        ></div>
+
+        <ul class="flex space-x-3 py-2 px-3 text-black relative z-20">
+          <li
+            class="px-3 py-1 rounded-lg cursor-pointer text-white transition-colors duration-1000"
+          >
+            <i class="fa-solid fa-house"></i>
+          </li>
+          <li
+            class="px-3 py-1 rounded-lg cursor-pointer transition-colors duration-1000"
+          >
+            Profile
+          </li>
+          <li
+            class="px-3 py-1 rounded-lg cursor-pointer transition-colors duration-1000"
+          >
+            Project
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main
+      class="relative w-11/12 m-auto mt-24 mb-4 sm:w-1/2 lg:w-5/12 xl:w-4/12 grid justify-items-center"
+    >
+      <div
+        id="mario"
+        class="absolute top-[8vh] transition-transform duration-1000"
+      >
         <img
-          src="https://4kwallpapers.com/images/walls/thumbs_3t/18308.jpg"
-          alt="Pic"
+          class="animate-bounce h-[50vh] sm:h-[70vh]"
+          src="https://www.clipartmax.com/png/full/91-914193_crafting-with-meek-paper-mario-jump.png"
+          alt="mario"
         />
-        <h2>Aaryan Dhakal</h2>
-        <h3>(18)(he/him)</h3>
-        <h4>Anime | Coding | Gaming | Movies | Music</h4>
-        <h4 class="quote">dreams are the advertisement of death</h4>
-        <div class="contact-section">
-          <a href="https://www.facebook.com/aaa.ryan01" target="_blank"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              color="#fff"
-              fill="none"
+      </div>
+
+      <div
+        class="profile-content absolute m-auto grid justify-items-center rounded-2xl shadow-[0_0_1rem_#000] translate-x-[100vw] transition-transform duration-1000"
+      >
+        <div
+          class="pfp w-full h-60 rounded-2xl shadow-[0_5px_7px_#000] bg-[url('https://media1.tenor.com/m/J80oh0-yYr0AAAAd/cartenon-temple-sung-jin-woo.gif')] bg-center bg-cover"
+        ></div>
+
+        <div
+          class="txt-details space-y-10 text-center p-10 pointer-events-none"
+        >
+          <div class="name-details">
+            <h2 class="text-2xl">Aaryan Dhakal</h2>
+            <h3 class="text-sm">(18)(he/him)</h3>
+          </div>
+
+          <h4>Anime | Coding | Gaming | Movies | Music</h4>
+
+          <div
+            class="bar w-full h-0.5 bg-white transition-colors duration-500"
+          ></div>
+          <h4 class="quote uppercase text-lg">
+            dreams are the advertisement of death
+          </h4>
+          <div
+            class="bar w-full h-0.5 bg-white transition-colors duration-500"
+          ></div>
+
+          <div
+            class="contact-section w-full flex justify-evenly pointer-events-auto"
+          >
+            <a
+              class="rounded-full"
+              href="https://www.facebook.com/aaa.ryan01"
+              target="_blank"
             >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linejoin="round"
-              /></svg
-          ></a>
-          <a href="https://www.instagram.com/aaa_ryan01" target="_blank"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              color="#fff"
-              fill="none"
+              <i
+                class="fa-brands fa-facebook fa-xl hover:scale-125 transition-transform duration-300"
+              ></i>
+            </a>
+            <a
+              class="rounded-full"
+              href="https://www.instagram.com/aaa_ryan01"
+              target="_blank"
             >
-              <path
-                d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
-                stroke="currentColor"
-                stroke-width="1.5"
-              />
-              <path
-                d="M17.5078 6.5L17.4988 6.5"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              /></svg
-          ></a>
-          <a href="https://www.linkedin.com/in/aaa-ryan01" target="_blank"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              color="#fff"
-              fill="none"
+              <i
+                class="fa-brands fa-instagram fa-xl hover:scale-125 transition-transform duration-300"
+              ></i>
+            </a>
+            <a
+              class="rounded-full"
+              href="https://www.linkedin.com/in/aaa-ryan01"
+              target="_blank"
             >
-              <path
-                d="M7 10V17"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M7.00801 7L6.99902 7"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linejoin="round"
-              /></svg
-          ></a>
-          <a href="https://github.com/QwertyMD" target="_blank"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              color="#fff"
-              fill="none"
+              <i
+                class="fa-brands fa-linkedin fa-xl hover:scale-125 transition-transform duration-300"
+              ></i>
+            </a>
+            <a
+              class="rounded-full"
+              href="https://github.com/QwertyMD"
+              target="_blank"
             >
-              <path
-                d="M6.51734 17.1132C6.91177 17.6905 8.10883 18.9228 9.74168 19.2333M9.86428 22C8.83582 21.8306 2 19.6057 2 12.0926C2 5.06329 8.0019 2 12.0008 2C15.9996 2 22 5.06329 22 12.0926C22 19.6057 15.1642 21.8306 14.1357 22C14.1357 22 13.9267 18.5826 14.0487 17.9969C14.1706 17.4113 13.7552 16.4688 13.7552 16.4688C14.7262 16.1055 16.2043 15.5847 16.7001 14.1874C17.0848 13.1032 17.3268 11.5288 16.2508 10.0489C16.2508 10.0489 16.5318 7.65809 15.9996 7.56548C15.4675 7.47287 13.8998 8.51192 13.8998 8.51192C13.4432 8.38248 12.4243 8.13476 12.0018 8.17939C11.5792 8.13476 10.5568 8.38248 10.1002 8.51192C10.1002 8.51192 8.53249 7.47287 8.00036 7.56548C7.46823 7.65809 7.74917 10.0489 7.74917 10.0489C6.67316 11.5288 6.91516 13.1032 7.2999 14.1874C7.79575 15.5847 9.27384 16.1055 10.2448 16.4688C10.2448 16.4688 9.82944 17.4113 9.95135 17.9969C10.0733 18.5826 9.86428 22 9.86428 22Z"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              /></svg
-          ></a>
+              <i
+                class="fa-brands fa-github fa-xl hover:scale-125 transition-transform duration-300"
+              ></i>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="project-content">
-        <h1>Projects</h1>
-        <div class="items">
-          <ul>
-            <li>
-              <a href="https://qwertymd.github.io/AIM-Trainer" target="_blank"
-                >AIM Trainer (Super Rough)</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://qwertymd.github.io/Background-Changer"
-                target="_blank"
-                >Background Changer</a
-              >
-            </li>
-            <li>
-              <a href="https://qwertymd.github.io/Clock" target="_blank"
-                >Clock</a
-              >
-            </li>
-            <!-- <li><a href="" target="_blank">Dad Jokes</a></li> -->
-            <!-- <li><a href="" target="_blank">Funny FAQ</a></li> -->
-            <!-- <li><a href="" target="_blank">Expandable Images (AOT)</a></li> -->
-            <li>
-              <a href="https://qwertymd.github.io/GIF-Generator" target="_blank"
-                >GIF Generator</a
-              >
-            </li>
-            <li>
-              <a href="https://qwertymd.github.io/Movie-App" target="_blank"
-                >Movie App</a
-              >
-            </li>
-            <li>
-              <a href="https://qwertymd.github.io/Number-Guess" target="_blank"
-                >Guess the Number</a
-              >
-            </li>
-            <!-- <li><a href="" target="_blank">Quotes Generator</a></li> -->
-            <li>
-              <a href="https://qwertymd.github.io/Slideshow" target="_blank"
-                >Slideshow</a
-              >
-            </li>
-            <li>
-              <a href="https://qwertymd.github.io/Soundboard" target="_blank"
-                >Soundboard</a
-              >
-            </li>
-            <li>
-              <a href="https://qwertymd.github.io/To-Do-List" target="_blank"
-                >To-Do List</a
-              >
-            </li>
-          </ul>
-        </div>
+      <div
+        class="project-content absolute translate-x-[200vw] transition-transform duration-1000"
+      >
+        <img
+          class="h-[50vh] sm:h-[70vh]"
+          src="https://media.tenor.com/Cj3sLJg6mo0AAAAi/rickroll.gif"
+          alt="rickroll"
+        />
       </div>
-    </div>
+    </main>
 
-    <script src="script.js"></script>
+
   </body>
 </html>
