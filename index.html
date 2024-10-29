@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>L</title>
+
     <link
       rel="shortcut icon"
       href="https://avatarfiles.alphacoders.com/364/364764.jpg"
@@ -14,52 +15,51 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
     />
-
-  <script type="module" crossorigin src="assets/index-DzHIT7hs.js"></script>
-  <link rel="stylesheet" crossorigin href="assets/index-B6jIWD1o.css">
-</head>
-
+    <script type="module" crossorigin src="assets/index-DwVAo6ZV.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/index-Dka7THIP.css">
+  </head>
   <body
-    class="mt-2 md:mt-3 font-['JetBrains_Mono'] bg-black bg-[url('https://www.transparenttextures.com/patterns/shattered-dark.png')] text-white relative overflow-x-hidden transition-colors duration-500"
+    class="font-['JetBrains_Mono'] bg-black bg-[url('https://www.transparenttextures.com/patterns/shattered.png')] text-pink-300 grid grid-rows-[repeat(1,1fr_99fr)] m-0 h-screen"
   >
-    <header
-      class="grid justify-items-center justify-center text-center md:flex md:items-center md:justify-between md:mx-9"
-    >
-      <div class="clock-switch flex items-center justify-between w-36">
-        <div class="clock pointer-events-none">
-          <div class="time-section"></div>
-          <div class="date-section"></div>
-        </div>
-
-        <div class="switch">
-          <i class="fa-regular fa-lightbulb fa-2xl cursor-pointer"></i>
-          <i class="hidden fa-regular fa-moon fa-2xl cursor-pointer"></i>
-        </div>
+    <header class="grid justify-items-center">
+      <div class="clock text-center py-5 pointer-events-none">
+        <div class="time-section text-xl sm:text-lg"></div>
+        <div class="date-section text-lg sm:text-sm"></div>
       </div>
 
       <nav
-        class="relative m-4 rounded-xl bg-[aliceblue] shadow-[0_0_1rem_#000] flex items-center"
+        class="relative flex items-center bg-pink-300 text-white text-xl sm:text-lg rounded-lg py-2 sm:my-5 shadow-[0_0_1rem_#000]"
       >
         <div
-          class="active absolute bg-black py-4 w-12 z-10 rounded-lg left-2 transition-all duration-1000"
+          class="active absolute z-10 p-6 sm:py-5 left-2.5 rounded-lg bg-pink-400 transition-all duration-500"
         ></div>
 
-        <ul class="flex space-x-3 py-2 px-3 text-black relative z-20">
+        <div
+          class="active absolute z-10 px-14 sm:px-12 py-6 sm:py-5 left-20 rounded-lg bg-pink-400 transition-all duration-500 scale-0 opacity-0"
+        ></div>
+
+        <div
+          class="active absolute z-10 px-14 sm:px-[3.2rem] py-6 sm:py-5 left-[13.2rem] sm:left-[12.6rem] rounded-lg bg-pink-400 transition-all duration-500 scale-0 opacity-0"
+        ></div>
+
+        <ul class="flex">
           <li
-            class="px-3 py-1 rounded-lg cursor-pointer text-white transition-colors duration-1000"
+            class="z-20 rounded-lg py-3 sm:py-2 px-4 mx-2 cursor-pointer transition-colors duration-30"
           >
             <i class="fa-solid fa-house"></i>
           </li>
+
           <li
-            class="px-3 py-1 rounded-lg cursor-pointer transition-colors duration-1000"
+            class="z-20 rounded-lg py-3 sm:py-2 px-4 mx-2 cursor-pointer transition-colors duration-300"
           >
             Profile
           </li>
+
           <li
-            class="px-3 py-1 rounded-lg cursor-pointer transition-colors duration-1000"
+            class="z-20 rounded-lg py-3 sm:py-2 px-4 mx-2 cursor-pointer transition-colors duration-300"
           >
             Project
           </li>
@@ -67,96 +67,81 @@
       </nav>
     </header>
 
-    <main
-      class="relative w-11/12 m-auto mt-24 mb-4 sm:w-1/2 lg:w-5/12 xl:w-4/12 grid justify-items-center"
-    >
+    <main class="relative flex justify-center items-center">
       <div
-        id="mario"
-        class="absolute top-[5rem] transition-transform duration-1000"
+        class="mario absolute bottom-16 sm:bottom-8 transition-all duration-500"
       >
         <img
-          class="animate-bounce h-[50vh] sm:h-[70vh]"
+          class="h-[60vh] animate-bounce"
           src="https://www.clipartmax.com/png/full/91-914193_crafting-with-meek-paper-mario-jump.png"
           alt="mario"
         />
       </div>
 
       <div
-        class="profile-content absolute top-[-1rem] m-auto grid justify-items-center rounded-2xl shadow-[0_0_1rem_#000] transition-transform duration-1000 scale-[0.001] opacity-0"
+        class="profile pointer-events-none absolute rounded-2xl shadow-[0_0_1rem_#000] space-y-10 pb-14 sm:pb-10 transition-all duration-500 scale-0 opacity-0"
       >
-        <div
-          class="pfp w-full h-60 rounded-2xl shadow-[0_5px_7px_#000] bg-[url('https://media1.tenor.com/m/J80oh0-yYr0AAAAd/cartenon-temple-sung-jin-woo.gif')] bg-center bg-cover"
-        ></div>
+        <img
+          class="rounded-2xl w-full shadow-[0_5px_7px_#000]"
+          src="https://media1.tenor.com/m/J80oh0-yYr0AAAAd/cartenon-temple-sung-jin-woo.gif"
+          alt="pfp"
+        />
 
-        <div
-          class="txt-details space-y-10 text-center p-10 pointer-events-none"
-        >
+        <div class="txt space-y-14 sm:space-y-10 text-center mx-12">
           <div class="name-details">
-            <h2 class="text-2xl">Aaryan Dhakal</h2>
-            <h3 class="text-sm">(18)(he/him)</h3>
+            <h2 class="text-2xl sm:text-xl">Aaryan Dhakal</h2>
+            <h3 class="sm:text-sm">(18)(he/him)</h3>
           </div>
 
-          <h4>Anime | Coding | Gaming | Movies | Music</h4>
+          <h4 class="text-lg sm:text-base">
+            Anime | Coding | Gaming | Movies | Music
+          </h4>
 
-          <div
-            class="bar w-full h-0.5 bg-white transition-colors duration-500"
-          ></div>
-          <h4 class="quote uppercase text-lg">
+          <div class="w-full h-0.5 bg-pink-400"></div>
+          <h4 class="quote uppercase text-2xl sm:text-xl">
             dreams are the advertisement of death
           </h4>
-          <div
-            class="bar w-full h-0.5 bg-white transition-colors duration-500"
-          ></div>
+          <div class="w-full h-0.5 bg-pink-400"></div>
 
-          <div
-            class="contact-section w-full flex justify-evenly pointer-events-auto"
-          >
+          <div class="contact pointer-events-auto flex w-full justify-evenly">
             <a
-              class="rounded-full"
+              class="rounded-full animate-bounce"
               href="https://www.facebook.com/aaa.ryan01"
               target="_blank"
             >
-              <i
-                class="fa-brands fa-facebook fa-xl hover:scale-125 transition-transform duration-300"
-              ></i>
+              <i class="fa-brands fa-facebook fa-2xl"></i>
             </a>
             <a
-              class="rounded-full"
+              class="rounded-full animate-bounce"
               href="https://www.instagram.com/aaa_ryan01"
               target="_blank"
             >
-              <i
-                class="fa-brands fa-instagram fa-xl hover:scale-125 transition-transform duration-300"
-              ></i>
+              <i class="fa-brands fa-instagram fa-2xl"></i>
             </a>
             <a
-              class="rounded-full"
+              class="rounded-full animate-bounce"
               href="https://www.linkedin.com/in/aaa-ryan01"
               target="_blank"
             >
-              <i
-                class="fa-brands fa-linkedin fa-xl hover:scale-125 transition-transform duration-300"
-              ></i>
+              <i class="fa-brands fa-linkedin fa-2xl"></i>
             </a>
             <a
-              class="rounded-full"
+              class="rounded-full animate-bounce"
               href="https://github.com/QwertyMD"
               target="_blank"
             >
-              <i
-                class="fa-brands fa-github fa-xl hover:scale-125 transition-transform duration-300"
-              ></i>
+              <i class="fa-brands fa-github fa-2xl"></i>
             </a>
           </div>
         </div>
       </div>
 
       <div
-        class="project-content absolute transition-transform duration-1000 scale-[0.001] top-[-3rem] opacity-0"
+        class="project absolute bottom-16 sm:bottom-8 transition-all duration-500 scale-0 opacity-0"
       >
         <img
-          class="h-[50vh] sm:h-[80vh]"
-          src="https://media.tenor.com/Cj3sLJg6mo0AAAAi/rickroll.gif"
+          class="h-[75vh]"
+          src="https://media.tenor.com/xo0jvr4bbTMAAAAi/rick-astley-rickroll.gif"
           alt="rickroll"
         />
       </div>
