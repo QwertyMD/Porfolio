@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>L</title>
+    <title>L</title>
     <link
       rel="shortcut icon"
       href="https://avatarfiles.alphacoders.com/364/364764.jpg"
@@ -17,8 +17,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
     />
-    <script type="module" crossorigin src="assets/index-CM5Iit9K.js"></script>
-    <link rel="stylesheet" crossorigin href="assets/index-Ct5e99CP.css" />
+    <script type="module" crossorigin src="/assets/index-CM5Iit9K.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Ct5e99CP.css">
   </head>
   <body
     class="font-['JetBrains_Mono'] bg-black bg-[url('https://www.transparenttextures.com/patterns/shattered.png')] m-0"
@@ -33,10 +33,10 @@
         class="relative flex items-center bg-pink-300 text-lg rounded-lg my-2 shadow-[0_1px_7px_#000]"
       >
         <div
-          class="active absolute z-10 px-7 py-5 left-[6px] rounded-lg bg-pink-400 transition-all duration-500"
+          class="active absolute z-10 px-7 py-5 left-[6px] rounded-lg bg-pink-400 transition-all duration-500 scale-0 opacity-0"
         ></div>
         <div
-          class="active absolute z-10 px-14 py-5 left-[75px] rounded-lg bg-pink-400 transition-all duration-500 scale-0 opacity-0"
+          class="active absolute z-10 px-14 py-5 left-[75px] rounded-lg bg-pink-400 transition-all duration-500"
         ></div>
         <div
           class="active absolute z-10 px-14 py-5 left-[195px] rounded-lg bg-pink-400 transition-all duration-500 scale-0 opacity-0"
@@ -63,7 +63,7 @@
     </header>
 
     <main class="text-white flex justify-center mt-16 relative">
-      <div class="home transition-all duration-500 absolute top-0">
+      <div class="home transition-all duration-500 absolute top-0 scale-0 opacity-0">
         <iframe
           class="rounded-2xl w-[90vw] h-[60vh] xl:w-[60vw] xl:h-[65vh]"
           src="https://www.crazygames.com/embed/om-nom-run"
@@ -73,7 +73,7 @@
       </div>
 
       <div
-        class="profile transition-all duration-500 bg-[#201f31] grid xl:grid-cols-[repeat(1,1fr_2fr)] mx-5 px-5 w-[90vw] xl:w-[60vw] justify-items-center xl:items-center space-y-10 py-10 rounded-2xl absolute top-0 scale-0 opacity-0"
+        class="profile transition-all duration-500 bg-[#201f31] grid xl:grid-cols-[repeat(1,1fr_2fr)] mx-5 px-5 w-[90vw] xl:w-[60vw] justify-items-center xl:items-center space-y-10 py-10 rounded-2xl absolute top-0"
       >
         <div class="space-y-10 text-center">
           <img
@@ -226,8 +226,15 @@
             target="_blank"
             >To-Do List</a
           >
+          <a
+            class="hover:scale-110 transition-transform bg-pink-400 rounded-2xl xl:px-5 py-3"
+            href="https://github.com/QwertyMD/Weather-App"
+            target="_blank"
+            >Weather App</a
+          >
         </ul>
       </div>
     </main>
+
   </body>
 </html>
