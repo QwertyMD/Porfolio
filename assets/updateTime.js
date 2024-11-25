@@ -10,4 +10,4 @@ function updateTime() {
   timeSection.innerHTML = `${hours}:${minutes} ${period}`;
 }
 
-export{updateTime}
+export { updateTime };

@@ -17,4 +17,4 @@ function updateNavig() {
   });
 }
 
-export {updateNavig}
+export { updateNavig };
