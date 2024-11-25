@@ -1,4 +1,5 @@
 import { updateTime } from "./updateTime.js";
+updateTime();
 setInterval(() => {
   updateTime();
 }, 1000);
