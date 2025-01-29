@@ -2,7 +2,7 @@ import { LuFacebook, LuGithub, LuInstagram, LuLinkedin } from "react-icons/lu";
 import React from "react";
 const ProfilePage = () => {
   return (
-    <div className="grid gap-10 lg:grid-cols-[1fr_2fr] border-2 border-white lg:max-w-[80vw] xl:max-w-[60vw] m-5 p-7 lg:p-20 rounded-xl">
+    <div className="grid gap-10 lg:grid-cols-[1fr_2fr] transition shadow-[0_0_7px_1px_rgba(255,255,255,1)] hover:shadow-[0_0_14px_2px_rgba(255,255,255,1)] lg:max-w-[80vw] xl:max-w-[60vw] m-5 p-7 lg:p-20 rounded-xl cursor-default">
       <div className="grid gap-10">
         <div className="grid justify-items-center gap-7">
           <img
@@ -11,28 +11,28 @@ const ProfilePage = () => {
             className="w-48 h-48 rounded-full animate-pulse"
           />
           <div className="flex gap-5">
-            <a href="">
+            <a href="https://www.facebook.com/aaa.ryan01" target="_blank">
               <LuFacebook
                 size={28}
-                className="cursor-pointer transition duration-300 hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.8)] hover:scale-110"
+                className="cursor-pointer transition hover:drop-shadow-[0_0_4px_rgba(255,255,255,1)] hover:scale-110"
               />
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/aaa_ryan01" target="_blank">
               <LuInstagram
                 size={28}
-                className="cursor-pointer transition duration-300 hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.8)] hover:scale-110"
+                className="cursor-pointer transition hover:drop-shadow-[0_0_4px_rgba(255,255,255,1)] hover:scale-110"
               />
             </a>
-            <a href="">
+            <a href="https://github.com/QwertyMD" target="_blank">
               <LuGithub
                 size={28}
-                className="cursor-pointer transition duration-300 hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.8)] hover:scale-110"
+                className="cursor-pointer transition hover:drop-shadow-[0_0_4px_rgba(255,255,255,1)] hover:scale-110"
               />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/aaa-ryan01" target="_blank">
               <LuLinkedin
                 size={28}
-                className="cursor-pointer transition duration-300 hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.8)] hover:scale-110"
+                className="cursor-pointer transition hover:drop-shadow-[0_0_4px_rgba(255,255,255,1)] hover:scale-110"
               />
             </a>
           </div>
