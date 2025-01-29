@@ -46,11 +46,11 @@ function App() {
       </div>
 
       {isHome ? (
-        <div className="self-end">
+        <div className="flex justify-center items-center self-end">
           <HomePage />
         </div>
       ) : (
-        <div className="self-center text-white">
+        <div className="flex justify-center items-center self-center text-white">
           {isProfile ? <ProfilePage /> : <ProjectPage />}
         </div>
       )}
