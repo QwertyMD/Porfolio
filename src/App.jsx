@@ -1,59 +1,41 @@
 import "./App.css";
-import React, { useState } from "react";
-import { Button } from "./components/ui/button";
-import { Home } from "lucide-react";
-import HomePage from "./components/HomePage";
-import ProfilePage from "./components/ProfilePage";
-import ProjectPage from "./components/ProjectPage";
+import React, { useEffect, useState } from "react";
+import Home from "./components/Home";
+import Profile from "./components/Profile";
+import Project from "./components/Project";
+import Loading from "./components/Loading";
+import Header from "./components/Header";
 
 function App() {
-  const [isHome, setIsHome] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isHome, setIsHome] = useState(false);
   const [isProfile, setIsProfile] = useState(false);
   const [isProject, setIsProject] = useState(false);
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-800 via-slate-800 to-gray-900 grid grid-rows-[0.1fr_1fr]">
-      <div className="flex justify-center items-center gap-10 p-10">
-        <Button
-          onClick={() => {
-            setIsHome(false);
-            setIsProfile(true);
-            setIsProject(false);
-          }}
-          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition hover:shadow-[0_0_7px_1px_rgba(255,255,255,1)] text-lg hover:scale-105 active:scale-95"
-        >
-          Profile
-        </Button>
-        <Button
-          onClick={() => {
-            setIsHome(true);
-            setIsProfile(false);
-            setIsProject(false);
-          }}
-          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition hover:shadow-[0_0_7px_1px_rgba(255,255,255,1)] text-lg hover:scale-105 active:scale-95 rounded-full w-12 h-12"
-        >
-          <Home className="scale-150" />
-        </Button>
-        <Button
-          onClick={() => {
-            setIsHome(false);
-            setIsProfile(false);
-            setIsProject(true);
-          }}
-          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition hover:shadow-[0_0_7px_1px_rgba(255,255,255,1)] text-lg hover:scale-105 active:scale-95"
-        >
-          Project
-        </Button>
-      </div>
 
-      {isHome ? (
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+      setIsHome(true);
+    }, 1000);
+  }, []);
+
+  return (
+    <div className="min-h-screen p-5 pb-0 bg-slate-800 bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')] grid grid-rows-[0.1fr_1fr] text-white">
+      <Header
+        setIsHome={setIsHome}
+        setIsProfile={setIsProfile}
+        setIsProject={setIsProject}
+      />
+      {isHome && (
         <div className="flex justify-center items-center self-end">
-          <HomePage />
-        </div>
-      ) : (
-        <div className="flex justify-center items-center self-center text-white">
-          {isProfile ? <ProfilePage /> : <ProjectPage />}
+          <Home />
         </div>
       )}
+      <div className="flex justify-center items-center self-center">
+        {isLoading && <Loading />}
+        {isProfile && <Profile />}
+        {isProject && <Project />}
+      </div>
     </div>
   );
 }

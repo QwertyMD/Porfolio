@@ -1,6 +1,6 @@
 import { LuFacebook, LuGithub, LuInstagram, LuLinkedin } from "react-icons/lu";
 import React from "react";
-const ProfilePage = () => {
+const Profile = () => {
   const socialInfo = {
     facebook: {
       link: "https://www.facebook.com/aaa.ryan01",
@@ -20,11 +20,11 @@ const ProfilePage = () => {
     },
   };
   return (
-    <div className="grid gap-10 lg:grid-cols-[1fr_2fr] transition shadow-[0_0_7px_1px_rgba(255,255,255,1)] hover:shadow-[0_0_14px_2px_rgba(255,255,255,1)] lg:max-w-[80vw] xl:max-w-[60vw] m-5 p-7 lg:p-20 rounded-xl cursor-default">
+    <div className="grid gap-10 lg:grid-cols-[1fr_2fr] transition shadow-[0_0_7px_1px_rgba(255,255,255,1)] hover:shadow-[0_0_14px_2px_rgba(255,255,255,1)] lg:max-w-[80vw] xl:max-w-[60vw] my-5 p-5 lg:p-20 rounded-xl cursor-default">
       <div className="grid gap-10">
         <div className="grid justify-items-center gap-7">
           <img
-            src="https://wallpapers-clan.com/wp-content/uploads/2024/03/mario-pfp-03.jpg"
+            src="mario.jpg"
             alt="heker"
             className="w-48 h-48 rounded-full animate-pulse"
           />
@@ -64,4 +64,4 @@ const ProfilePage = () => {
   );
 };
 
-export default ProfilePage;
+export default Profile;
