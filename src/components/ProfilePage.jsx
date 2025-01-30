@@ -1,6 +1,24 @@
 import { LuFacebook, LuGithub, LuInstagram, LuLinkedin } from "react-icons/lu";
 import React from "react";
 const ProfilePage = () => {
+  const socialInfo = {
+    facebook: {
+      link: "https://www.facebook.com/aaa.ryan01",
+      icon: LuFacebook,
+    },
+    instagram: {
+      link: "https://www.instagram.com/aaa_ryan01",
+      icon: LuInstagram,
+    },
+    github: {
+      link: "https://github.com/QwertyMD",
+      icon: LuGithub,
+    },
+    linkedin: {
+      link: "https://www.linkedin.com/in/aaa-ryan01",
+      icon: LuLinkedin,
+    },
+  };
   return (
     <div className="grid gap-10 lg:grid-cols-[1fr_2fr] transition shadow-[0_0_7px_1px_rgba(255,255,255,1)] hover:shadow-[0_0_14px_2px_rgba(255,255,255,1)] lg:max-w-[80vw] xl:max-w-[60vw] m-5 p-7 lg:p-20 rounded-xl cursor-default">
       <div className="grid gap-10">
@@ -11,30 +29,17 @@ const ProfilePage = () => {
             className="w-48 h-48 rounded-full animate-pulse"
           />
           <div className="flex gap-5">
-            <a href="https://www.facebook.com/aaa.ryan01" target="_blank">
-              <LuFacebook
-                size={28}
-                className="cursor-pointer transition hover:drop-shadow-[0_0_4px_rgba(255,255,255,1)] hover:scale-110"
-              />
-            </a>
-            <a href="https://www.instagram.com/aaa_ryan01" target="_blank">
-              <LuInstagram
-                size={28}
-                className="cursor-pointer transition hover:drop-shadow-[0_0_4px_rgba(255,255,255,1)] hover:scale-110"
-              />
-            </a>
-            <a href="https://github.com/QwertyMD" target="_blank">
-              <LuGithub
-                size={28}
-                className="cursor-pointer transition hover:drop-shadow-[0_0_4px_rgba(255,255,255,1)] hover:scale-110"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/aaa-ryan01" target="_blank">
-              <LuLinkedin
-                size={28}
-                className="cursor-pointer transition hover:drop-shadow-[0_0_4px_rgba(255,255,255,1)] hover:scale-110"
-              />
-            </a>
+            {Object.keys(socialInfo).map((e) => {
+              const IconComponent = socialInfo[e].icon;
+              return (
+                <a href={socialInfo[e].link} target="_blank" key={e}>
+                  <IconComponent
+                    size={28}
+                    className="cursor-pointer transition hover:drop-shadow-[0_0_4px_rgba(255,255,255,1)] hover:scale-110"
+                  />
+                </a>
+              );
+            })}
           </div>
         </div>
         <div className="grid justify-items-center gap-3">
