@@ -3,35 +3,35 @@ import React from "react";
 const Project = () => {
   const projects = {
     "AIM Trainer": {
-      link: "https://qwertymd.github.io/AIM-Trainer",
+      link: "https://github.com/QwertyMD/AIM-Trainer",
       img: "",
     },
     "Joke Generator": {
-      link: "https://qwertymd.github.io/Joke-Generator",
+      link: "https://github.com/QwertyMD/Joke-Generator",
       img: "",
     },
     "Marriage Card": {
-      link: "https://qwertymd.github.io/Marriage-Card",
+      link: "https://github.com/QwertyMD/Marriage-Card",
       img: "",
     },
     "Movie App": {
-      link: "https://qwertymd.github.io/Movie-App",
+      link: "https://github.com/QwertyMD/Movie-App",
       img: "",
     },
     "Music Player": {
-      link: "https://qwertymd.github.io/Music-Player",
+      link: "https://github.com/QwertyMD/Music-Player",
       img: "",
     },
     "ToDo List": {
-      link: "https://qwertymd.github.io/ToDo-List",
+      link: "https://github.com/QwertyMD/ToDo-List",
       img: "",
     },
     "Weather App": {
-      link: "https://qwertymd.github.io/Weather-App",
+      link: "https://github.com/QwertyMD/Weather-App",
       img: "",
     },
     "Whack A Mole": {
-      link: "https://qwertymd.github.io/Whack-A-Mole",
+      link: "https://github.com/QwertyMD/Whack-A-Mole",
       img: "",
     },
   };
