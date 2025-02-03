@@ -24,7 +24,7 @@ const Profile = () => {
       <div className="grid gap-10">
         <div className="grid justify-items-center gap-7">
           <img
-            src="src/assets/mario.jpg"
+            src="mario.jpg"
             alt="Mamma Mia"
             className="w-48 h-48 rounded-full"
           />
