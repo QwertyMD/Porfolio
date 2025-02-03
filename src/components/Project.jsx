@@ -42,7 +42,7 @@ const Project = () => {
           href={projects[e].link}
           target="_blank"
           key={e}
-          className="relative before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 grid p-5 pt-7 before:rounded-xl before:shadow-[0_0_7px_1px_rgba(255,255,255,1)] before:animate-pulse hover:scale-110 hover:opacity-100 transition"
+          className="relative before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 grid p-5 pt-7 before:rounded-xl before:shadow-[0_0_7px_1px_rgba(255,255,255,1)] before:animate-pulse hover:scale-105 transition"
         >
           <img
             src="https://media.tenor.com/L2NVsm9IRsUAAAAi/mario-bros-star-star-arcade.gif"

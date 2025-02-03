@@ -25,8 +25,8 @@ const Profile = () => {
         <div className="grid justify-items-center gap-7">
           <img
             src="src/assets/mario.jpg"
-            alt="heker"
-            className="w-48 h-48 rounded-full animate-pulse"
+            alt="Mamma Mia"
+            className="w-48 h-48 rounded-full"
           />
           <div className="flex gap-5">
             {Object.keys(socialInfo).map((e) => {

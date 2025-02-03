@@ -4,6 +4,6 @@
   box-sizing: border-box;
   font-family: "Manrope";
 }
-a:not(hover){
-  opacity: 0.5;
+a.relative:not(:hover) {
+  opacity: 0.6;
 }
