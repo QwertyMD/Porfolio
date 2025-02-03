@@ -20,11 +20,11 @@ const Profile = () => {
     },
   };
   return (
-    <div className="grid gap-10 lg:grid-cols-[1fr_2fr] transition shadow-[0_0_7px_1px_rgba(255,255,255,1)] hover:shadow-[0_0_14px_2px_rgba(255,255,255,1)] lg:max-w-[80vw] xl:max-w-[60vw] my-5 p-5 lg:p-20 rounded-xl cursor-default">
+    <div className="grid gap-10 lg:grid-cols-[1fr_2fr] transition shadow-[0_0_7px_1px_rgba(255,255,255,1)] hover:shadow-[0_0_14px_2px_rgba(255,255,255,1)] lg:max-w-[80vw] xl:max-w-[60vw] my-5 p-5 lg:p-20 rounded-xl">
       <div className="grid gap-10">
         <div className="grid justify-items-center gap-7">
           <img
-            src="mario.jpg"
+            src="src/assets/mario.jpg"
             alt="heker"
             className="w-48 h-48 rounded-full animate-pulse"
           />
@@ -35,7 +35,7 @@ const Profile = () => {
                 <a href={socialInfo[e].link} target="_blank" key={e}>
                   <IconComponent
                     size={28}
-                    className="cursor-pointer transition hover:drop-shadow-[0_0_4px_rgba(255,255,255,1)] hover:scale-110"
+                    className="cursor-pointer transition hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.7)] hover:scale-110"
                   />
                 </a>
               );

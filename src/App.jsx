@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen p-5 pb-0 bg-slate-800 bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')] grid grid-rows-[0.1fr_1fr] text-white">
+    <div className="min-h-screen p-5 pb-0 bg-slate-800 bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')] grid grid-rows-[0.1fr_1fr] text-white cursor-default">
       <Header
         setIsHome={setIsHome}
         setIsProfile={setIsProfile}
