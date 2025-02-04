@@ -20,7 +20,7 @@ const Profile = () => {
     },
   };
   return (
-    <div className="grid gap-10 lg:grid-cols-[1fr_2fr] transition shadow-[0_0_7px_1px_rgba(255,255,255,1)] hover:shadow-[0_0_14px_2px_rgba(255,255,255,1)] lg:max-w-[80vw] xl:max-w-[60vw] my-5 p-5 lg:p-20 rounded-xl">
+    <div className="grid gap-10 lg:grid-cols-[1fr_2fr] transition hover:shadow-[0_0_7px_1px_rgba(255,255,255,1)] lg:max-w-[80vw] xl:max-w-[60vw] my-5 p-5 lg:p-20 rounded-xl relative before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 before:rounded-xl before:shadow-[0_0_7px_1px_rgba(255,255,255,1)] before:animate-pulse before:hover:animate-none z-10 before:-z-10">
       <div className="grid gap-10">
         <div className="grid justify-items-center gap-7">
           <img
@@ -42,14 +42,14 @@ const Profile = () => {
             })}
           </div>
         </div>
-        <div className="grid justify-items-center gap-3">
+        <div className="space-y-3 text-center">
           <p className="text-3xl xl:text-4xl">Aaryan Dhakal</p>
           <p>he/him (18)</p>
         </div>
       </div>
       <div className="grid gap-5 content-center justify-items-center lg:justify-items-start">
         <p className="text-3xl xl:text-4xl">Who am I?</p>
-        <p className="text-lg text-justify">
+        <p className="text-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sit
           dolore iure et dolorum ad debitis fugiat magnam dolorem officia
           tenetur vitae exercitationem necessitatibus aspernatur, perspiciatis

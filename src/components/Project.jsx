@@ -42,12 +42,12 @@ const Project = () => {
           href={projects[e].link}
           target="_blank"
           key={e}
-          className="relative before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 grid p-5 pt-7 before:rounded-xl before:shadow-[0_0_7px_1px_rgba(255,255,255,1)] before:animate-pulse hover:scale-105 transition"
+          className="relative before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 grid gap-5 p-5 before:rounded-xl before:shadow-[0_0_7px_1px_rgba(255,255,255,1)] before:animate-pulse hover:scale-105 transition opacity-60 hover:opacity-100 before:hover:animate-none"
         >
           <img
             src="https://media.tenor.com/L2NVsm9IRsUAAAAi/mario-bros-star-star-arcade.gif"
-            alt="img"
-            className="w-32 h-32 rounded-lg animate-bounce"
+            alt="Super Star"
+            className="w-32 h-32 rounded-lg"
           />
           <p className="text-lg text-center">{e}</p>
         </a>

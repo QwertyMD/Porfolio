@@ -3,18 +3,24 @@ import { Button } from "./ui/button";
 import { HomeIcon } from "lucide-react";
 
 const Header = ({ setIsHome, setIsProfile, setIsProject }) => {
-  const [time, setTime] = useState({ hour: "00", minute: "00", second: "00" });
+  const [time, setTime] = useState({
+    hour: "00",
+    minute: "00",
+    second: "00",
+    ampm: "00",
+  });
   useEffect(() => {
     setInterval(() => {
       const date = new Date();
       let hour = date.getHours();
       let minute = date.getMinutes();
       let second = date.getSeconds();
+      let ampm = hour < 12 ? "AM" : "PM";
       hour = hour % 12 || 12;
       hour = hour < 10 ? `0${hour}` : hour;
       minute = minute < 10 ? `0${minute}` : minute;
       second = second < 10 ? `0${second}` : second;
-      setTime({ hour, minute, second });
+      setTime({ hour, minute, second, ampm });
     }, 1000);
     setTimeout(() => {
       setIsLoading(false);
@@ -25,7 +31,7 @@ const Header = ({ setIsHome, setIsProfile, setIsProject }) => {
     <div className="grid gap-5 justify-items-center">
       {
         <p className="text-xl">
-          {time.hour} : {time.minute} : {time.second}
+          {time.hour} : {time.minute} : {time.second} : {time.ampm}
         </p>
       }
       <div className="flex justify-center items-center gap-10 ">
