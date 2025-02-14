@@ -10,6 +10,7 @@ function App() {
   const [isHome, setIsHome] = useState(false);
   const [isProfile, setIsProfile] = useState(false);
   const [isProject, setIsProject] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -19,21 +20,25 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen p-5 pb-0 bg-slate-800 bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')] grid grid-rows-[0.1fr_1fr] text-white cursor-default">
-      <Header
-        setIsHome={setIsHome}
-        setIsProfile={setIsProfile}
-        setIsProject={setIsProject}
-      />
-      {isHome && (
-        <div className="flex justify-center items-center self-end">
-          <Home />
+    <div className={isDark && "dark"}>
+      <div className="min-h-screen p-5 pb-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] dark:bg-slate-800 dark:bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')] grid grid-rows-[0.1fr_1fr] dark:text-white cursor-default">
+        <Header
+          setIsHome={setIsHome}
+          setIsProfile={setIsProfile}
+          setIsProject={setIsProject}
+          setIsDark={setIsDark}
+          isDark={isDark}
+        />
+        {isHome && (
+          <div className="flex justify-center items-center self-end">
+            <Home />
+          </div>
+        )}
+        <div className="flex justify-center items-center self-center">
+          {isLoading && <Loading />}
+          {isProfile && <Profile />}
+          {isProject && <Project />}
         </div>
-      )}
-      <div className="flex justify-center items-center self-center">
-        {isLoading && <Loading />}
-        {isProfile && <Profile />}
-        {isProject && <Project />}
       </div>
     </div>
   );

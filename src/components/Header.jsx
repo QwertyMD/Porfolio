@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, Moon, Sun } from "lucide-react";
 
-const Header = ({ setIsHome, setIsProfile, setIsProject }) => {
+const Header = ({
+  setIsHome,
+  setIsProfile,
+  setIsProject,
+  setIsDark,
+  isDark,
+}) => {
   const [time, setTime] = useState({
     hour: "00",
     minute: "00",
@@ -30,9 +36,17 @@ const Header = ({ setIsHome, setIsProfile, setIsProject }) => {
   return (
     <div className="grid gap-5 justify-items-center">
       {
-        <p className="text-xl">
-          {time.hour} : {time.minute} : {time.second} : {time.ampm}
-        </p>
+        <div className="relative">
+          <p className="text-xl">
+            {time.hour} : {time.minute} : {time.second} : {time.ampm}
+          </p>
+          <button
+            onClick={() => setIsDark(!isDark)}
+            className="absolute -right-12 top-0"
+          >
+            {isDark ? <Moon /> : <Sun />}
+          </button>
+        </div>
       }
       <div className="flex justify-center items-center gap-10 ">
         <Button
@@ -41,7 +55,7 @@ const Header = ({ setIsHome, setIsProfile, setIsProject }) => {
             setIsProfile(true);
             setIsProject(false);
           }}
-          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition hover:shadow-[0_0_7px_1px_rgba(255,255,255,1)] text-lg hover:scale-105 active:scale-95"
+          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition shadow-[0_0_7px_1px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_7px_rgba(255,255,255,1)] text-lg hover:scale-105 active:scale-95"
         >
           Profile
         </Button>
@@ -51,7 +65,7 @@ const Header = ({ setIsHome, setIsProfile, setIsProject }) => {
             setIsProfile(false);
             setIsProject(false);
           }}
-          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition hover:shadow-[0_0_7px_1px_rgba(255,255,255,1)] text-lg hover:scale-105 active:scale-95 rounded-full w-12 h-12"
+          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition shadow-[0_0_7px_1px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_7px_rgba(255,255,255,1)] text-lg hover:scale-105 active:scale-95 rounded-full w-12 h-12"
         >
           <HomeIcon className="scale-150" />
         </Button>
@@ -61,7 +75,7 @@ const Header = ({ setIsHome, setIsProfile, setIsProject }) => {
             setIsProfile(false);
             setIsProject(true);
           }}
-          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition hover:shadow-[0_0_7px_1px_rgba(255,255,255,1)] text-lg hover:scale-105 active:scale-95"
+          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition shadow-[0_0_7px_1px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_7px_rgba(255,255,255,1)] text-lg hover:scale-105 active:scale-95"
         >
           Project
         </Button>
