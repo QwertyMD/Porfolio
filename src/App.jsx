@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className={isDark && "dark"}>
-      <div className="min-h-screen p-5 pb-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] dark:bg-slate-800 dark:bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')] grid grid-rows-[0.1fr_1fr] dark:text-white cursor-default">
+      <div className="min-h-screen p-5 pb-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] bg-[aliceblue] dark:bg-[#201f3e] dark:bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')] grid grid-rows-[0.1fr_1fr] dark:text-white cursor-default transition-colors">
         <Header
           setIsHome={setIsHome}
           setIsProfile={setIsProfile}

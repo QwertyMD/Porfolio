@@ -5,7 +5,7 @@ const Home = () => {
     <img
       src="jump.png"
       alt="Mamma Mia"
-      className="max-w-[80vw] max-h-[80vh] animate-bounce drop-shadow-[0_0_20px]"
+      className="max-w-[80vw] max-h-[80vh] animate-bounce drop-shadow-[0_0_20px_rgba(0,0,0,1)]"
     />
   );
 };

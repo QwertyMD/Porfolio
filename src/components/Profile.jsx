@@ -20,7 +20,7 @@ const Profile = () => {
     },
   };
   return (
-    <div className="grid gap-10 lg:grid-cols-[1fr_2fr] transition-shadow hover:shadow-[0_0_21px_rgba(0,0,0,0.5)] dark:hover:shadow-[0_0_21px_rgba(255,255,255,0.5)] lg:max-w-[80vw] xl:max-w-[60vw] my-5 p-5 lg:p-20 rounded-xl relative before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 before:rounded-xl before:shadow-[0_0_7px_1px_rgba(0,0,0,1)] dark:before:shadow-[0_0_7px_1px_rgba(255,255,255,1)] before:animate-pulse before:hover:animate-none z-10 before:-z-10">
+    <div className="grid gap-10 lg:grid-cols-[1fr_2fr] transition-shadow lg:max-w-[80vw] xl:max-w-[60vw] my-5 p-5 lg:p-20 rounded-xl relative before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 before:rounded-xl before:shadow-[0_0_10px] before:animate-pulse z-10 before:-z-10">
       <div className="grid gap-10">
         <div className="grid justify-items-center gap-7">
           <img
@@ -35,7 +35,7 @@ const Profile = () => {
                 <a href={socialInfo[e].link} target="_blank" key={e}>
                   <IconComponent
                     size={28}
-                    className="cursor-pointer transition-[shadow_transform] hover:drop-shadow-[0_0_5px_rgba(0,0,0,0.7)] dark:hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.7)] hover:scale-110"
+                    className="cursor-pointer transition-[shadow_transform] hover:drop-shadow-[0_0_5px] hover:scale-110"
                   />
                 </a>
               );

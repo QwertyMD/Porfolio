@@ -55,7 +55,7 @@ const Header = ({
             setIsProfile(true);
             setIsProject(false);
           }}
-          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition shadow-[0_0_7px_1px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_7px_rgba(255,255,255,1)] text-lg hover:scale-105 active:scale-95"
+          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition shadow-[0_0_7px] hover:shadow-[0_0_7px] text-lg hover:scale-105 active:scale-95"
         >
           Profile
         </Button>
@@ -65,7 +65,7 @@ const Header = ({
             setIsProfile(false);
             setIsProject(false);
           }}
-          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition shadow-[0_0_7px_1px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_7px_rgba(255,255,255,1)] text-lg hover:scale-105 active:scale-95 rounded-full w-12 h-12"
+          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition shadow-[0_0_7px] hover:shadow-[0_0_7px] text-lg hover:scale-105 active:scale-95 rounded-full w-12 h-12"
         >
           <HomeIcon className="scale-150" />
         </Button>
@@ -75,7 +75,7 @@ const Header = ({
             setIsProfile(false);
             setIsProject(true);
           }}
-          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition shadow-[0_0_7px_1px_rgba(0,0,0,1)] dark:hover:shadow-[0_0_7px_rgba(255,255,255,1)] text-lg hover:scale-105 active:scale-95"
+          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition shadow-[0_0_7px] hover:shadow-[0_0_7px] text-lg hover:scale-105 active:scale-95"
         >
           Project
         </Button>
