@@ -28,6 +28,9 @@ function App() {
           setIsProject={setIsProject}
           setIsDark={setIsDark}
           isDark={isDark}
+          isHome={isHome}
+          isProfile={isProfile}
+          isProject={isProject}
         />
         {isHome && (
           <div className="flex justify-center items-center self-end">

@@ -26,7 +26,7 @@ const Profile = () => {
           <img
             src="mario.jpg"
             alt="Mamma Mia"
-            className="w-48 h-48 rounded-full"
+            className="w-48 h-48 rounded-full outline"
           />
           <div className="flex gap-5">
             {Object.keys(socialInfo).map((e) => {

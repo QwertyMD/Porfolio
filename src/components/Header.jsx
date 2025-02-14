@@ -8,6 +8,9 @@ const Header = ({
   setIsProject,
   setIsDark,
   isDark,
+  isHome,
+  isProfile,
+  isProject,
 }) => {
   const [time, setTime] = useState({
     hour: "00",
@@ -42,9 +45,11 @@ const Header = ({
           </p>
           <button
             onClick={() => setIsDark(!isDark)}
-            className="absolute -right-12 top-0"
+            className={`absolute -right-12 top-0 transition-transform duration-500 ${
+              isDark ? "rotate-90" : "rotate-0"
+            }`}
           >
-            {isDark ? <Moon /> : <Sun />}
+            {isDark ? <Sun /> : <Moon />}
           </button>
         </div>
       }
@@ -55,7 +60,10 @@ const Header = ({
             setIsProfile(true);
             setIsProject(false);
           }}
-          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition shadow-[0_0_7px] hover:shadow-[0_0_7px] text-lg hover:scale-105 active:scale-95"
+          className={`text-lg transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 ${
+            isProfile && "outline-dashed"
+          }`}
+          variant=" "
         >
           Profile
         </Button>
@@ -65,7 +73,10 @@ const Header = ({
             setIsProfile(false);
             setIsProject(false);
           }}
-          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition shadow-[0_0_7px] hover:shadow-[0_0_7px] text-lg hover:scale-105 active:scale-95 rounded-full w-12 h-12"
+          className={`transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 rounded-full w-12 h-12 ${
+            isHome && "outline-dashed"
+          }`}
+          variant=" "
         >
           <HomeIcon className="scale-150" />
         </Button>
@@ -75,7 +86,10 @@ const Header = ({
             setIsProfile(false);
             setIsProject(true);
           }}
-          className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 hover:from-gray-200 hover:via-gray-300 hover:to-gray-400 text-black transition shadow-[0_0_7px] hover:shadow-[0_0_7px] text-lg hover:scale-105 active:scale-95"
+          className={`text-lg transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 ${
+            isProject && "outline-dashed"
+          }`}
+          variant=" "
         >
           Project
         </Button>
