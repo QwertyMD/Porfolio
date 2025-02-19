@@ -61,7 +61,7 @@ const Header = ({
             setIsProject(false);
           }}
           className={`text-lg transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 ${
-            isProfile && "outline-dashed"
+            isProfile && "outline"
           }`}
           variant=" "
         >
@@ -74,7 +74,7 @@ const Header = ({
             setIsProject(false);
           }}
           className={`transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 rounded-full w-12 h-12 ${
-            isHome && "outline-dashed"
+            isHome && "outline"
           }`}
           variant=" "
         >
@@ -87,7 +87,7 @@ const Header = ({
             setIsProject(true);
           }}
           className={`text-lg transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 ${
-            isProject && "outline-dashed"
+            isProject && "outline"
           }`}
           variant=" "
         >
