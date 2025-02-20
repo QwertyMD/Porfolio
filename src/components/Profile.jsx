@@ -20,7 +20,7 @@ const Profile = () => {
     },
   };
   return (
-    <div className="grid gap-10 lg:grid-cols-[1fr_2fr] transition-shadow lg:max-w-[80vw] xl:max-w-[60vw] my-5 p-5 lg:p-20 rounded-xl relative before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 before:rounded-xl before:shadow-[0_0_10px] before:animate-pulse z-10 before:-z-10">
+    <div className="grid gap-10 lg:grid-cols-[1fr_2fr] transition-shadow w-full lg:max-w-[80vw] xl:max-w-[60vw] my-5 p-10 lg:p-20 rounded-xl relative before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 before:rounded-xl before:shadow-[0_0_10px] before:animate-pulse z-10 before:-z-10">
       <div className="grid gap-10">
         <div className="grid justify-items-center gap-7">
           <img
@@ -47,18 +47,9 @@ const Profile = () => {
           <p>he/him (18)</p>
         </div>
       </div>
-      <div className="grid gap-5 content-center justify-items-center lg:justify-items-start">
+      <div className="space-y-5 justify-items-center lg:justify-items-start">
         <p className="text-3xl xl:text-4xl">Who am I?</p>
-        <p className="text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sit
-          dolore iure et dolorum ad debitis fugiat magnam dolorem officia
-          tenetur vitae exercitationem necessitatibus aspernatur, perspiciatis
-          possimus vel sequi adipisci pariatur alias consequatur veritatis
-          aliquam. Ratione fuga accusamus soluta consequatur eaque repellat,
-          explicabo porro at sed hic facilis quia dolore labore, numquam eveniet
-          ad fugiat magni. Repudiandae, aperiam nisi voluptate aut rem doloribus
-          veniam error consequatur sed ea quod!
-        </p>
+        <p className="text-justify text-lg">It's-A Me, Mario!</p>
       </div>
     </div>
   );

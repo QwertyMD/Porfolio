@@ -37,7 +37,7 @@ const Header = ({
     }, 1000);
   }, []);
   return (
-    <div className="grid gap-5 justify-items-center">
+    <div className="space-y-10 justify-items-center">
       {
         <div className="relative">
           <p className="text-xl">
@@ -61,7 +61,7 @@ const Header = ({
             setIsProject(false);
           }}
           className={`text-lg transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 ${
-            isProfile && "outline"
+            isProfile && "outline outline-4 outline-offset-4"
           }`}
           variant=" "
         >
@@ -74,7 +74,7 @@ const Header = ({
             setIsProject(false);
           }}
           className={`transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 rounded-full w-12 h-12 ${
-            isHome && "outline"
+            isHome && "outline outline-4 outline-offset-4"
           }`}
           variant=" "
         >
@@ -87,7 +87,7 @@ const Header = ({
             setIsProject(true);
           }}
           className={`text-lg transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 ${
-            isProject && "outline"
+            isProject && "outline outline-4 outline-offset-4"
           }`}
           variant=" "
         >

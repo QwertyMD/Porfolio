@@ -40,13 +40,13 @@ const Project = () => {
     },
   };
   return (
-    <div className="grid gap-5 lg:gap-10 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mt-5">
+    <div className="flex flex-wrap justify-center gap-10 my-5 max-w-4xl">
       {Object.keys(projects).map((e) => (
         <a
           href={projects[e].link}
           target="_blank"
           key={e}
-          className="relative before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 grid justify-items-center gap-5 p-5 before:rounded-xl before:shadow-[0_0_10px] hover:before:shadow-[0_0_20px] before:animate-pulse hover:scale-105 transition-transform opacity-60 hover:opacity-100"
+          className="relative before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 grid justify-items-center gap-5 p-5 before:rounded-xl before:shadow-[0_0_10px] hover:before:shadow-[0_0_20px] before:animate-pulse hover:scale-105 transition-transform opacity-60 hover:opacity-100 w-56"
         >
           <img
             src="https://media.tenor.com/L2NVsm9IRsUAAAAi/mario-bros-star-star-arcade.gif"

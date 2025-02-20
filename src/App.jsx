@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className={isDark && "dark"}>
-      <div className="min-h-screen p-5 pb-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] bg-[aliceblue] dark:bg-[#201f3e] dark:bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')] grid grid-rows-[0.1fr_1fr] dark:text-white cursor-default transition-colors">
+      <div className="min-h-screen p-5 pb-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] bg-[aliceblue] dark:bg-[#201f3e] dark:bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')] grid grid-rows-[200px_1fr] dark:text-white cursor-default transition-colors">
         <Header
           setIsHome={setIsHome}
           setIsProfile={setIsProfile}
@@ -33,11 +33,11 @@ function App() {
           isProject={isProject}
         />
         {isHome && (
-          <div className="flex justify-center items-center self-end">
+          <div className="flex justify-center self-end">
             <Home />
           </div>
         )}
-        <div className="flex justify-center items-center self-center">
+        <div className="flex justify-center items-center">
           {isLoading && <Loading />}
           {isProfile && <Profile />}
           {isProject && <Project />}
