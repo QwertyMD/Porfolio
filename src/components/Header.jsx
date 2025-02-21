@@ -16,7 +16,7 @@ const Header = ({
     hour: "00",
     minute: "00",
     second: "00",
-    ampm: "00",
+    ampm: "??",
   });
   useEffect(() => {
     setInterval(() => {
@@ -30,7 +30,7 @@ const Header = ({
       minute = minute < 10 ? `0${minute}` : minute;
       second = second < 10 ? `0${second}` : second;
       setTime({ hour, minute, second, ampm });
-    }, 1000);
+    }, 2000);
     setTimeout(() => {
       setIsLoading(false);
       setIsHome(true);
@@ -41,7 +41,7 @@ const Header = ({
       {
         <div className="relative">
           <p className="text-xl">
-            {time.hour} : {time.minute} : {time.second} : {time.ampm}
+            {time.hour} : {time.minute} &nbsp; {time.ampm}
           </p>
           <button
             onClick={() => setIsDark(!isDark)}
