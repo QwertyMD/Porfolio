@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { HomeIcon, Moon, Sun } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
-const Header = ({
-  setIsHome,
-  setIsProfile,
-  setIsProject,
-  setIsDark,
-  isDark,
-  isHome,
-  isProfile,
-  isProject,
-}) => {
+const Header = ({ setIsDark, isDark }) => {
   const [time, setTime] = useState({
     hour: "00",
     minute: "00",
@@ -31,10 +23,6 @@ const Header = ({
       second = second < 10 ? `0${second}` : second;
       setTime({ hour, minute, second, ampm });
     }, 2000);
-    setTimeout(() => {
-      setIsLoading(false);
-      setIsHome(true);
-    }, 1000);
   }, []);
   return (
     <div className="space-y-10 justify-items-center">
@@ -54,45 +42,41 @@ const Header = ({
         </div>
       }
       <div className="flex justify-center items-center gap-10 ">
-        <Button
-          onClick={() => {
-            setIsHome(false);
-            setIsProfile(true);
-            setIsProject(false);
-          }}
-          className={`text-lg transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 ${
-            isProfile && "outline outline-4 outline-offset-4"
-          }`}
-          variant=" "
+        <NavLink
+          to="/profile"
+          className={(e) => e.isActive && "rounded-lg outline-dashed outline-4"}
         >
-          Profile
-        </Button>
-        <Button
-          onClick={() => {
-            setIsHome(true);
-            setIsProfile(false);
-            setIsProject(false);
-          }}
-          className={`transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 rounded-full w-12 h-12 ${
-            isHome && "outline outline-4 outline-offset-4"
-          }`}
-          variant=" "
+          <Button
+            className="text-lg transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95"
+            variant=" "
+          >
+            Profile
+          </Button>
+        </NavLink>
+        <NavLink
+          to="/"
+          className={(e) =>
+            e.isActive && "rounded-full outline-dashed outline-4"
+          }
         >
-          <HomeIcon className="scale-150" />
-        </Button>
-        <Button
-          onClick={() => {
-            setIsHome(false);
-            setIsProfile(false);
-            setIsProject(true);
-          }}
-          className={`text-lg transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 ${
-            isProject && "outline outline-4 outline-offset-4"
-          }`}
-          variant=" "
+          <Button
+            className="transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 rounded-full w-12 h-12"
+            variant=" "
+          >
+            <HomeIcon className="scale-150" />
+          </Button>
+        </NavLink>
+        <NavLink
+          to="/project"
+          className={(e) => e.isActive && "rounded-lg outline-dashed outline-4"}
         >
-          Project
-        </Button>
+          <Button
+            className="text-lg transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95"
+            variant=" "
+          >
+            Project
+          </Button>
+        </NavLink>
       </div>
     </div>
   );
