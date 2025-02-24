@@ -52,39 +52,39 @@ const Header = ({ setIsDark, isDark }) => {
           <NavLink
             to="/profile"
             className={(e) =>
-              e.isActive && "rounded-lg outline-dashed outline-4"
+              `${
+                e.isActive &&
+                "bg-black text-white dark:bg-white dark:text-black"
+              } rounded-lg border-2 border-black dark:border-white hover:scale-105 active:scale-95 transition-transform`
             }
           >
-            <Button
-              className="text-lg transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95"
-              variant=" "
-            >
+            <Button className="text-lg" variant=" ">
               Profile
             </Button>
           </NavLink>
           <NavLink
             to="/"
             className={(e) =>
-              e.isActive && "rounded-full outline-dashed outline-4"
+              `${
+                e.isActive &&
+                "bg-black text-white dark:bg-white dark:text-black"
+              } rounded-full border-2 border-black dark:border-white hover:scale-105 active:scale-95 transition-transform`
             }
           >
-            <Button
-              className="transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95 rounded-full w-12 h-12"
-              variant=" "
-            >
+            <Button className="w-12 h-12" variant=" ">
               <HomeIcon className="scale-150" />
             </Button>
           </NavLink>
           <NavLink
             to="/project"
             className={(e) =>
-              e.isActive && "rounded-lg outline-dashed outline-4"
+              `${
+                e.isActive &&
+                "bg-black text-white dark:bg-white dark:text-black"
+              } rounded-lg border-2 border-black dark:border-white hover:scale-105 active:scale-95 transition-transform`
             }
           >
-            <Button
-              className="text-lg transition-transform shadow-[0_0_5px] hover:scale-105 active:scale-95"
-              variant=" "
-            >
+            <Button className="text-lg" variant=" ">
               Project
             </Button>
           </NavLink>
